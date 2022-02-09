@@ -7,7 +7,7 @@ jobs:
     - name: Create local changes
       run: |
         npm i -g @vercel/ncc
-        ncc build dist/index.js --license dist/licenses.txt
+        ncc build index.js --license  licenses.txt -o dist/
     - name: Commit files
       run: |
         git add .
